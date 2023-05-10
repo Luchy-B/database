@@ -97,15 +97,14 @@ Example commands:
 ### Install
 
 Install this project with:
-Postgresql
-<!--
-Example command:
 
 ```sh
   cd my-project
-  gem install
+  install Postgresql
 ```
---->
+
+### Usage
+Open SQL SHELL or PGadmin to display you table/data
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,21 +155,6 @@ If you like this project please star it or drop a comment on how to improve on t
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse and my teammates for their support.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
