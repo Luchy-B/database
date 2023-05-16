@@ -28,3 +28,12 @@ CREATE TABLE IF NOT EXISTS medical_treatments (
 	treatment_id INT REFERENCES treatments(id),
 	PRIMARY KEY(ID)
 )
+
+CREATE TABLE IF NOT EXISTS invoices (
+	ID INT GENERATED ALWAYS AS IDENTITY,
+	total_amount DECIMAL,
+	generated_at timestamp,
+	payed_at timestamp,
+	medical_history_id INT REFERENCES medical_histories(id),
+	PRIMARY KEY(ID)
+)
