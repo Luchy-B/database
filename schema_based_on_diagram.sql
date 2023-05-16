@@ -6,3 +6,11 @@ CREATE TABLE IF NOT EXISTS patients (
 	DATE_OF_BIRTH DATE,
 	PRIMARY KEY(ID)
 )
+
+CREATE TABLE IF NOT EXISTS medical_histories (
+	ID INT GENERATED ALWAYS AS IDENTITY,
+	admitted_at timestamp,
+	status VARCHAR(150),
+	patient_id INT REFERENCES patients(id),
+	PRIMARY KEY(ID)
+)
