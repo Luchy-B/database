@@ -21,3 +21,10 @@ CREATE TABLE IF NOT EXISTS treatments (
 	name VARCHAR(50),
 	PRIMARY KEY(ID)
 )
+
+CREATE TABLE IF NOT EXISTS medical_treatments (
+	ID INT GENERATED ALWAYS AS IDENTITY,
+	medical_history_id INT REFERENCES medical_histories(id),
+	treatment_id INT REFERENCES treatments(id),
+	PRIMARY KEY(ID)
+)
