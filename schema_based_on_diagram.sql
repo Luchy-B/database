@@ -37,3 +37,14 @@ CREATE TABLE IF NOT EXISTS invoices (
 	medical_history_id INT REFERENCES medical_histories(id),
 	PRIMARY KEY(ID)
 )
+
+CREATE TABLE IF NOT EXISTS invoice_items (
+	ID INT GENERATED ALWAYS AS IDENTITY,
+	unity_price DECIMAL,
+	quantity INT,
+	total_price DECIMAL,
+	invoice_id INT REFERENCES invoices(id),
+	treatment_id INT REFERENCES treatments(id),
+	PRIMARY KEY(ID)
+)
+
