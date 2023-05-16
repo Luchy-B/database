@@ -14,3 +14,10 @@ CREATE TABLE IF NOT EXISTS medical_histories (
 	patient_id INT REFERENCES patients(id),
 	PRIMARY KEY(ID)
 )
+
+CREATE TABLE IF NOT EXISTS treatments (
+	ID INT GENERATED ALWAYS AS IDENTITY,
+	type VARCHAR(20),
+	name VARCHAR(50),
+	PRIMARY KEY(ID)
+)
